@@ -22,8 +22,8 @@ body {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 92%;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1538px;
     position: relative;
     z-index: 1;
 }
@@ -31,17 +31,17 @@ body {
 .home-head-logo {
     display: flex;
     -moz-box-pack: center;
-    justify-content: center;
+    justify-content: start;
     width: 30%;
+    background-color: black;
 }
 
 .logo-container {
     display: flex;
-    width: 217px;
+    width: 280px;
     max-width: 100%;
-    height: 78px;
+    height: 108px;
     touch-action: manipulation;
-    background-color: black;
     align-content: center;
     align-items: center;
 }
@@ -63,19 +63,49 @@ body {
     display: flex;
     -moz-box-align: center;
     align-items: center;
-    justify-content: space-around;
-    margin: auto;
+    justify-content: end;
+    margin: auto 109px;
     width: 80%;
+    font-size: 122%;
 }
 
 .nav-item {
     display: inline-block;
-    -webkit-transition: color .1s ease-in;
-    transition: color .1s ease-in;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
     color: #fff; 
-    background-color: transparent;   
+    background-color: transparent;
+    padding: 19px 30px;
+
+}
+
+/*ADDING THE MAIN PHOTO BEHIND THE PAGE */
+
+.main-content{
+    display: flex;
+    position: relative;
+    -moz-box-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 0;
+    background: #000;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.stage {
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    width: 93%;
+    object-fit: cover;
 }
