@@ -8,6 +8,8 @@ body {
     height: 100%;
 }
 
+/* HEADER CSS */
+
 .home-header {
     position: absolute;
     top: 0;
@@ -108,6 +110,7 @@ body {
     width: 93%;
     object-fit: cover;
 }
+/*TEXT DESCRIPTION OF BACKGROUND*/
 
 .about-container{
     position: relative;
@@ -165,7 +168,6 @@ body {
     white-space: nowrap;
     background-color: hsla(0,0%,100%,0);
     background-repeat: no-repeat;
-    background-position: calc(100% + 2px) -2px;
     background-size: 32px 32px;
     padding: 7px 14px 7px 14px;
     text-transform: uppercase;
@@ -175,7 +177,7 @@ body {
 
 .stage-button:hover {
     background-color: red;
-    color: black;
+    color: rgb(218, 218, 218);
 }
 
 .nav-item:hover {
