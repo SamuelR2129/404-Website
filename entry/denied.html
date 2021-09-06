@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <title>RESTART</title>
+</head>
+<body>
+    <main class="main">
+        <img src="404-logo.png" class="logo-image">
+    
+        <div class="denied-container">
+            <h1 class="denied">SORRY, NOT TONIGHT!</h1>
+        </div>
+
+        <div class="restart-container">
+            <a href="question1.html">
+                <button class="restart-button">RESTART</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-bottom: 100px;
+    height: 100%;
+    background-color: black;
+
+}
+
+.main {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    min-height: 300px;
+    margin-top: 168px;
+}
+
+.logo-image {
+    width: 400px;
+    height: 400px;
+    display: block;
+    z-index: 2;
+    bottom: 77px;
+    position: relative;
+}
+
+.denied-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 955px;
+    height: 107px;
+    padding: 10px;
+    z-index: 1;
+    bottom: 159px;
+    position: relative;
+}
+
+.denied {
+    font-size: 3rem;
+}
+
+.restart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 97px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.restart-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px solid red;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.restart-button:hover {
+    background-color: red;
+    color: black;
+
+}

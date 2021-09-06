@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <title>BOUNCER  TWO</title>
+</head>
+<body>
+    <main class="main">
+        <img src="404-logo.png" class="logo-image">
+    
+        <div class="qa-question">
+            <h1 class="question-text">HAVE YOU BEEN HERE BEFORE?</h1>
+        </div>
+
+        <div class="qa-answers">
+            <a href="../index-home.html">
+                <button class="qa-button">YES</button>
+            </a>
+            <a href="denied.html">
+                <button class="qa-button">NO</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-bottom: 100px;
+    height: 100%;
+    background-color: black;
+
+}
+
+.main {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    min-height: 300px;
+    margin-top: 168px;
+}
+
+.logo-image {
+    width: 400px;
+    height: 400px;
+    display: block;
+    z-index: 2;
+    bottom: 77px;
+    position: relative;
+}
+
+.qa-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 955px;
+    height: 107px;
+    padding: 10px;
+    z-index: 1;
+    bottom: 159px;
+    position: relative;
+}
+
+.question-text {
+    font-size: 3rem;
+}
+
+.qa-answers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    position: relative;
+    bottom: 97px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.qa-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px solid red;
+    color: white;
+    font-size: 57px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.qa-button:hover {
+    background-color: red;
+    color: black;
+
+}
