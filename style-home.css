@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Beatrice,sans-serif;
 }
 
 /* HEADER CSS */
@@ -16,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 20;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: block;
 }
 
@@ -25,7 +26,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    max-width: 1538px;
+    max-width: 1793px;
     position: relative;
     z-index: 1;
 }
@@ -66,8 +67,8 @@ body {
     -moz-box-align: center;
     align-items: center;
     justify-content: end;
-    margin: auto 109px;
-    width: 80%;
+    margin: auto 19px;
+    width: 97%;
     font-size: 122%;
 }
 
@@ -82,6 +83,8 @@ body {
     padding: 19px 30px;
 
 }
+
+
 
 /*ADDING THE MAIN PHOTO BEHIND THE PAGE */
 
@@ -177,7 +180,7 @@ body {
 
 .stage-button:hover {
     background-color: red;
-    color: rgb(218, 218, 218);
+    color: black;
 }
 
 .nav-item:hover {

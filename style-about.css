@@ -6,7 +6,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Beatrice,sans-serif;
     background-color: black;
+    overflow: hidden;
 }
 
 /* HEADER CSS */
@@ -17,7 +19,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 20;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: block;
 }
 
@@ -26,7 +28,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    max-width: 1538px;
+    max-width: 1793px;
     position: relative;
     z-index: 1;
 }
@@ -67,8 +69,8 @@ body {
     -moz-box-align: center;
     align-items: center;
     justify-content: end;
-    margin: auto 109px;
-    width: 80%;
+    margin: auto 19px;
+    width: 97%;
     font-size: 122%;
 }
 
@@ -85,7 +87,6 @@ body {
 }
 
 
-
 /*CONTENT CSS*/
 .about-container{
     width: 100%;
@@ -93,7 +94,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 600px;
-    margin-top: 149px;
+    margin-top: 188px;
 }
 
 .image-container {
