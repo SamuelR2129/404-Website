@@ -83,7 +83,10 @@ body {
     color: #fff; 
     background-color: transparent;
     padding: 19px 30px;
+}
 
+.nav-item:hover {
+    color: red;
 }
 
 
