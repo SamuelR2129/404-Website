@@ -46,12 +46,22 @@
         </div>
     </header>
     <div id="container">
-        <iframe id="iframe-container" src="https://events.humanitix.com/warehouse-rave/tickets?w=true&p=%2300ffff" width="100%"  frameborder="0"></iframe>
+        <div id="code-wrapper">
+            <h2 class="question">ENTER TICKET CODE <br> HERE</h2>
+            <input type="text" id="password">
+            <input id="button" type="button" value="ENTER">
+        </div>
+        
+        <iframe class="hidden" id="iframe-container" src="https://events.humanitix.com/warehouse-rave/tickets?w=true&p=%2300ffff" width="100%"  frameborder="0"></iframe>
     </div>
+
    
    
    
     <script>
+
+        /*HUMANITIX TICKETING SYSTEM--------------------------*/
+
         var humanitix = {
             findPos: function(obj) {
                 var curtop = 0;
@@ -76,6 +86,40 @@
               window.scroll(0, humanitix.findPos(iframeEl));
           }
 
-        }, false);</script>
+        }, false);
+        
+        /*PASSWORD SETUP-----------------------------------------------------------*/
+        
+        var input = document.getElementById("password");
+        var div = document.getElementById("iframe-container");
+        var btn = document.getElementById("button");
+        var wrap = document.getElementById("code-wrapper");
+
+
+        button.addEventListener("click", validate);
+
+        function validate(){
+        if (input.value == '21') { 
+            div.classList.remove('hidden');
+            input.classList.add('hidden');
+            btn.classList.add('hidden');
+            wrap.classList.add('hidden');
+
+
+        } else {  
+            password.focus(); 
+            password.setSelectionRange(0, password.value.length);   
+            alert('WRONG PASSWORD, NO DOOF FOR YOU!'); 
+        }
+        }
+
+        //for hitting enter
+        input.addEventListener("keydown", function(event){
+            if (event.keyCode === 13){
+                validate();
+            }
+        });
+
+    </script>
 </body>
 </html>
