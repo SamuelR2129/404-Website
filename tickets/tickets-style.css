@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+*::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Beatrice,sans-serif;
+    background-color: black;
+}
+
+/* HEADER CSS */
+
+.home-header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding-top: 1rem;
+    display: block;
+    background-color: black;
+}
+
+.home-head-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1793px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-head-logo {
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: start;
+    width: 30%;
+}
+
+.logo-container {
+    display: flex;
+    width: 349px;
+    max-width: 100%;
+    height: 129px;
+    touch-action: manipulation;
+    align-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100%;
+    height: 255%;
+    border-style: none;
+    box-sizing: inherit;
+}
+
+.home-head-nav {
+    display: flex;
+    width: 70%; 
+}
+
+.main-nav {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    justify-content: end;
+    margin: auto 19px;
+    width: 97%;
+    font-size: 122%;
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff; 
+    background-color: transparent;
+    padding: 19px 30px;
+}
+
+.nav-item:hover {
+    color: red;
+    text-shadow: 0 0 3px black, 2px 2px 5px black, -2px -2px 5px black;
+}
+
+/*GRID-----------------------------------------*/
+
+#container {
+    position: relative;
+    margin-top: 13%;
+    display:flex;
+}
+
+#iframe-container {
+    background-color: black;
+    position:relative;
+    width: 53%;
+    height: 50%;
+    margin: 0 auto;
+    filter: invert(1);
+}
