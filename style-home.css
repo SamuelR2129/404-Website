@@ -106,7 +106,6 @@ nav {
 /*TEXT DESCRIPTION OF BACKGROUND*/
 
 .about-container{
-    margin-top: 61%;
     position: relative;
     pointer-events: none;
     margin-right: auto;
@@ -130,6 +129,7 @@ nav {
     color: #fff;
     -webkit-filter: drop-shadow(6px 6px 6px #000);
     filter: drop-shadow(6px 6px 6px #000);
+    margin-left: 14%;
 }
 
 .homepage-lrg-text {
@@ -384,6 +384,14 @@ nav {
 
     .stage {
         width: 100%;
+    }
+
+    .about-container{
+        margin-top: 61%;
+    }
+
+    .about-content {
+        margin-left: 0;
     }
 
     /*CONTACT FORM ---------------------------------------*/
