@@ -2,124 +2,49 @@
 <head>
     <meta charset="utf-8"> 
     <link rel="stylesheet" href="tickets-style.css">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <title>Tickets</title>
 </head>
 <body>
-    <header class="home-header">
-        <div class="home-head-container">
-            <div class="home-head-logo">
-                <a href="/index-home.html" class="logo-container">
-                    <img src="../images/404-logo.png" class="logo-image">
-                </a>
-            </div>
-
-            <div class="home-head-nav">
-                <nav class="main-nav">
-                    <a href="../index-home.html" class="nav-item ">
-                        <span itemprop="name">
-                            Contact
-                        </span>
-                    </a>
-            
-            
-                    <a href="../gallery/gallery-index.html" class="nav-item ">
-                        <span itemprop="name">
-                            Gallery
-                        </span>
-                    </a>
-            
-            
-                    <a href="../mixes/index-mixes.html" class="nav-item ">
-                        <span itemprop="name">
-                            Mixes
-                        </span>
-                    </a>
-            
-            
-                    <a href="#" class="nav-item ">
-                        <span itemprop="name">
-                            Tickets
-                        </span>
-                    </a>
-                </nav>
-            </div>
+    <nav>
+        <div class="logo">
+            <a href="../index-home.html" class="logo-link">
+                <img src="../images/404-logocropped.png" class="logo-image">
+            </a>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li>
+                <a href="../index-home.html">CONTACT</a>
+            </li> 
+            <li>
+                <a href="../gallery/gallery-index.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="../mixes/index-mixes.html">MIXES</a>
+            </li>
+            <li>
+                <a href="tickets/tickets-index.html">TICKETS</a>
+            </li>
+        </ul>
+         <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
     <div id="container">
-        <div id="code-wrapper">
+        <div id="code-wrapper" class="show-element">
             <h2 class="question">ENTER TICKET CODE <br> HERE</h2>
             <input type="text" id="password">
             <input id="button" type="button" value="ENTER">
         </div>
         
-        <iframe class="hidden" id="iframe-container" src="https://events.humanitix.com/warehouse-rave/tickets?w=true&p=%2300ffff" width="100%"  frameborder="0"></iframe>
+        <iframe class="hidden" id="iframe-container" src="https://events.humanitix.com/hte-big-eqpoke-kow/tickets?w=true&p=%236621c0" width="100%" height="600px" frameborder="0"></iframe>
     </div>
 
    
-   
-   
-    <script>
+    <script src="../script.js"></script>
 
-        /*HUMANITIX TICKETING SYSTEM--------------------------*/
-
-        var humanitix = {
-            findPos: function(obj) {
-                var curtop = 0;
-                if (obj.offsetParent) {
-                do {
-                    curtop += obj.offsetTop;
-                } while ((obj = obj.offsetParent));
-                return [curtop];
-                }
-            }
-        };
-        window.addEventListener('message', function (e) {
-            if (e.origin !== "https://events.humanitix.com"){
-                return;
-            }   
-            var messageData = e.data;
-            var iframeEl = document.getElementById('iframe-container');
-            if (iframeEl && messageData && !isNaN(messageData.scrollHeight)){
-                iframeEl.style.height = messageData.scrollHeight + 'px';
-            }
-            if (iframeEl && messageData && messageData.pageChange) {
-              window.scroll(0, humanitix.findPos(iframeEl));
-          }
-
-        }, false);
-        
-        /*PASSWORD SETUP-----------------------------------------------------------*/
-        
-        var input = document.getElementById("password");
-        var div = document.getElementById("iframe-container");
-        var btn = document.getElementById("button");
-        var wrap = document.getElementById("code-wrapper");
-
-
-        button.addEventListener("click", validate);
-
-        function validate(){
-        if (input.value == '21') { 
-            div.classList.remove('hidden');
-            input.classList.add('hidden');
-            btn.classList.add('hidden');
-            wrap.classList.add('hidden');
-
-
-        } else {  
-            password.focus(); 
-            password.setSelectionRange(0, password.value.length);   
-            alert('WRONG PASSWORD, NO DOOF FOR YOU!'); 
-        }
-        }
-
-        //for hitting enter
-        input.addEventListener("keydown", function(event){
-            if (event.keyCode === 13){
-                validate();
-            }
-        });
-
-    </script>
 </body>
 </html>
