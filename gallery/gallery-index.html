@@ -2,50 +2,36 @@
 <header>
     <meta charset="utf-8"> 
     <link rel="stylesheet" href="gallery-style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <title>Gallery</title>
 </header>
 <body>
-    <header class="home-header">
-        <div class="home-head-container">
-            <div class="home-head-logo">
-                <a href="/index-home.html" class="logo-container">
-                    <img src="../images/404-logo.png" class="logo-image">
-                </a>
-            </div>
-
-            <div class="home-head-nav">
-                <nav class="main-nav">
-                    <a href="../index-home.html" class="nav-item ">
-                        <span itemprop="name">
-                            Contact
-                        </span>
-                    </a>
-            
-            
-                    <a href="#" class="nav-item ">
-                        <span itemprop="name">
-                            Gallery
-                        </span>
-                    </a>
-            
-            
-                    <a href="../mixes/index-mixes.html" class="nav-item ">
-                        <span itemprop="name">
-                            Mixes
-                        </span>
-                    </a>
-            
-            
-                    <a href="../tickets/tickets-index.html" class="nav-item ">
-                        <span itemprop="name">
-                            Tickets
-                        </span>
-                    </a>
-                </nav>
-            </div>
+    <nav>
+        <div class="logo">
+            <a href="#" class="logo-link">
+                <img src="../images/404-logocropped.png" class="logo-image">
+            </a>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li>
+                <a href="#contact-text-bottom">CONTACT</a>
+            </li> 
+            <li>
+                <a href="gallery/gallery-index.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="mixes/index-mixes.html">MIXES</a>
+            </li>
+            <li>
+                <a href="tickets/tickets-index.html">TICKETS</a>
+            </li>
+        </ul>
+         <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
     <section class="event">
         <img class="preview" src="photos/Warehouse 2/preview-one.JPG" href="#" alt="dj and crowd"> 
@@ -85,5 +71,8 @@
             </div>
         </div>
     </section>
+
+    <script src="../script.js"></script>
+
 </body>
 </html>
