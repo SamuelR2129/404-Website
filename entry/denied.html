@@ -50,7 +50,6 @@ body {
 
 .logo-image {
     width: 400px;
-    height: 400px;
     display: block;
     z-index: 2;
     bottom: 77px;
@@ -83,6 +82,7 @@ body {
 
 a {
     text-decoration: none;
+    z-index: 5;
 }
 
 .restart-button {
@@ -98,5 +98,26 @@ a {
 .restart-button:hover {
     background-color: red;
     color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+    .logo-image {
+        width: 208px;
+        bottom: 57px;
+    }   
+
+    .denied{
+    font-size: 1.2em;
+    }
+
+    .denied-container {
+        margin-top: 36px;
+    }
+    
+
+    .restart-container {
+        bottom: 140px;
+    }
 
 }

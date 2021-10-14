@@ -25,6 +25,7 @@
 </body>
 
 <style>
+    
     * {
     box-sizing: border-box;
     margin: 0;
@@ -53,7 +54,6 @@ body {
 
 .logo-image {
     width: 400px;
-    height: 400px;
     display: block;
     z-index: 2;
     bottom: 77px;
@@ -87,6 +87,7 @@ body {
 
 a {
     text-decoration: none;
+    z-index: 5;
 }
 
 .qa-button {
@@ -103,4 +104,28 @@ a {
     background-color: red;
     color: black;
 
+}
+
+@media screen and (max-width: 600px) {
+    .logo-image {
+        width: 208px;
+        bottom: 57px;
+    }   
+
+    .question-text {
+    font-size: 1.2em;
+    }
+
+    .qa-button {
+        font-size: 27px;
+    }
+
+    .qa-question {
+        margin-top: 36px;
+    }
+
+    .qa-answers {
+        gap: 52px;
+        bottom: 140px;
+    }
 }
