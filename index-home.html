@@ -67,26 +67,27 @@
             </div>
         </div>
         <div class="contact-wrap">
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/ryan@404events.co" method="POST">
                 <div class="form-container">
                     <ul class="form-content">
                         <li class="field" id="field-name">
-                            <input class="form-input" placeholder="Full Name">
+                            <input type="text" name="full-name" id="full-name" class="form-input" placeholder="Full Name" required>
                         </li>
                         <li class="field" id="field-number">
-                            <input class="form-input" placeholder="Phone Number">
+                            <input type="text" name="phone-number" id="phone-number" class="form-input" placeholder="Phone Number" required>
                         </li>
                         <li class="field" id="field-email">
-                            <input class="form-input" placeholder="Email">
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
                         </li>
                         <li class="field" id="field-text">
-                            <textarea class="form-input" id="input-text" placeholder="Message" ></textarea>
+                            <textarea type="text" name="input-text" class="form-input" id="input-text" placeholder="Message"></textarea>
                         </li>
                     </ul>
                 </div>
                 <div class="button-container">
-                    <a class="contact-button" href="#">SUBMIT</a>
+                    <a name="submit" type="submit" class="contact-button" href="#">SUBMIT</a>
                 </div>   
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
